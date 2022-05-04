@@ -13,3 +13,16 @@ const hash = {}
   }
   
   console.log(result)
+
+  //Вариант2
+
+//   let uniqueArray = jsonData.filter
+
+//   function uArray(array) {
+//     let out = [];
+//     for (let i=0, len=array.length; i<len; i++)
+//         if (out.indexOf(array[i]) === -1)
+//             out.push(array[i]);
+//     return out;
+// }
+// console.log("Array with unique values = ",uniqueArray);
