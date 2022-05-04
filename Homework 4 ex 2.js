@@ -1,5 +1,7 @@
 const jsonData= require('./task2 jsondata.json'); 
 
+//Вариант 1
+
 const result = []
 const hash = {}
   
