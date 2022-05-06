@@ -86,26 +86,3 @@ const userssearch = users.filter (function (e){
 }
 )
 console.log (userssearch)
-
-
-// https://medium.com/@stasonmars/подробно-про-метод-filter-в-javascript-1fcb239a0d74
-
-// function userssearch (){
-//     for (i=1;i<users.length;i++){
-//     users.registrationDate =='09.10.2021'|| users.registrationDate =='10.10.2021'   
-// }
-// }
-
-// console.log (userssearch)
-
-// const newarray = users.filter(function (sort){
-//     return sort.registrationDate='09.10.2021' 
-//         }
-// )
-// console.log (newarray)
-
-
-// arr.concat 
-//Map/filter/foreach
-//users.forEach(tempBlock=>{console.log(tempBlock.registrationDate=='09.10.2021'||tempBlock.registrationDate=='10.10.2021'?console.log(tempBlock):'')})
-// про массивы и объекты)
