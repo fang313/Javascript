@@ -53,3 +53,12 @@ const enterprises = [
       ]
     }
   ]
+
+  for (let i = 0; i < enterprises.length; i++) {
+    const enterprise = enterprises[i]
+  
+    for (let j = 0; j < enterprise.departments.length; j++) {
+      const department = enterprise.departments[j]
+      console.log(enterprise.name + ' ' + department.name + ' ' + department.employees_count + ' сотрудников')
+    }
+  }
