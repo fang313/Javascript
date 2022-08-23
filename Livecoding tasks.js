@@ -79,3 +79,19 @@ const anagramma = (str1, str2) => {
         console.log(str1 + " anagramma of word " + str2)
     }
 }
+
+
+// Неразобранное 
+
+// 2 Суммы
+
+var twoSum = function (nums, target) {
+    let map = {}
+    for(let i = 0;i < nums.length;i++){
+        if(target - nums[i] in map){
+           return [map[target - nums[i]],i]
+         }else{
+             map[nums[i]] = i
+         }
+    }
+};
