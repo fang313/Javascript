@@ -1,14 +1,8 @@
-
-
-const findVowels = str => {
-    let count = 0
-    const vowels = ['a', 'e', 'i', 'o', 'u']
-
-    for (let char of str.toLowerCase()){
-        if (vowels.includes(char))
-            count ++
+function getFib(n) {
+    if (n < 2){
+        return n;
     }
-    console.log(count)
+    return getFib(n-1) + getFib(n-2);
 }
 
-findVowels('abrakadabra')
+console.log(getFib(0))

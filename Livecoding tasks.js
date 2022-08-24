@@ -14,9 +14,10 @@ palindrom('addavalue')
 // Второе решение через стрелочную функцию 
 
 const palindrome = str => {
-    str = str.toLowerCase()
+    str = str.toLowerCase() //.replace (/\s/g,'') регулярное выражение для удаления пробелов
     return str === str.split('').reverse().join('')
 }
+
 
 // #2 Поиск гласных
 
