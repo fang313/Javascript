@@ -80,6 +80,48 @@ const anagramma = (str1, str2) => {
     }
 }
 
+// #6 Линейный поиск
+
+const arr = [1, 2, 3, 4, 5, 6, 8, 9, 12];
+
+function linearSearch(arr, key){
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] === key){
+            return i
+        }
+    }
+    return -1
+}
+
+console.log(linearSearch(arr, 5))
+
+// #7 Бинарный поиск
+
+const arr2 = [-1,0, 2, 4, 5, 6, 8, 9, 12];
+
+const search = function (nums, target){
+    let left = 0;
+    let right = nums.length - 1;
+    let separator; 
+
+    while (left <= right){
+        mid = Math.round((right - left)/2 + left)
+
+        if (target === nums[mid]){
+            return mid
+        } 
+        else if (target < nums[mid]){
+            right = mid - 1; 
+        }
+        else {
+            left = mid + 1
+        }
+    }
+    return -1;
+}
+
+console.log(search(arr2,4))
+
 
 // Неразобранное 
 
