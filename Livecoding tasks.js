@@ -38,12 +38,27 @@ const fibbonachi = num => {
     const result = [0, 1]
 
     for (let i = 2; i <= num; i++){
+
         const prevnum1 = result[i - 1]
         const prevnum2 = result[i - 2]
         result.push(prevnum1 + prevnum2)
     }
-    console.log(result(num))
+    return result[num]
 }
+
+// Шустрый вариант через присваивание
+
+const fibbonachiShort = num =>{
+    let a = 1;
+    let b = 1;
+
+    for (let i = 3; i < num; i++){
+    [a,b] = [b,a + b];
+    }
+    return b;
+}
+
+console.log(fibbonachiShort(3))
 
 // Через рекурсию 
 
