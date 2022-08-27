@@ -11,8 +11,7 @@ function palindrom(str){
 }
 palindrom('addavalue')
 
-// Второе решение через стрелочную функцию 
-
+// Второе решение через сравнение
 const palindrome = str => {
     str = str.toLowerCase() //.replace (/\s/g,'') регулярное выражение для удаления пробелов
     return str === str.split('').reverse().join('')
@@ -137,6 +136,32 @@ const search = function (nums, target){
 }
 
 console.log(search(arr2,4))
+
+// По поводу задач на лайвкодинг, какие у меня были в последнее время:
+// 1. Дан список интов, вывести отсортированный список квадратов без повторений.
+
+const int_arr = [1, 3, 5, 7, 4, 9, 2, 3, 5]
+
+const int2 = int_arr => {
+    new_arr = [...new Set(int_arr.sort())]
+    let result = [];
+
+    for (let i = 0; i < new_arr.length; i++){
+    result.push((new_arr[i])*(new_arr[i]))
+    }
+    console.log(result)
+}
+
+int2(int_arr)
+
+// 
+
+
+
+
+
+
+
 
 
 // Неразобранное 
