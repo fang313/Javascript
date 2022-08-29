@@ -140,24 +140,15 @@ const factorial = (n) =>{
 
 // Числа фиббоначи через рекурсию
 
-const fibbonachi = (n) => {
+const fibbonachi2 = (n) => {
     if (n === 1 || n === 2){
         return 1
     }
 
-    return fibbonachi(n - 1) + fibbonachi (n - 2)
+    return fibbonachi2(n - 1) + fibbonachi2 (n - 2)
 }
 
-
-const fibbonachi = (n) => {
-    if (n === 1 || n === 2){
-        return 1
-    }
-
-    return fibbonachi(n - 1) + fibbonachi (n - 2)
-}
-
-console.log(fibbonachi(8))
+console.log(fibbonachi2(8))
 
 
 const array = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
